@@ -1,0 +1,56 @@
+
+
+.main{width:990px; margin:0 auto; text-align:left;}
+
+/*=========page_1===========*/
+#page_1 #content_3 .col_1{width:315px;}
+#page_1 #content_3 .mid{width:53px;}
+#page_1 #content_3 .col_2{width:331px;}
+/*========//page_1===========*/
+
+/*=========page_2===========*/
+#page_2 #content_2 .col_1{width:455px;}
+#page_2 #content_2 .mid{width:53px;}
+#page_2 #content_2 .col_2{width:185px;}
+
+#page_2 #content_3 .col_1{width:189px;}
+#page_2 #content_3 .mid{width:60px;}
+#page_2 #content_3 .col_2{width:440px;}
+/*========//page_2===========*/
+
+/*=========page_3===========*/
+#page_3 #content_2 .col_1{width:192px;}
+#page_3 #content_2 .mid{width:53px;}
+#page_3 #content_2 .col_2{width:445px;}
+
+#page_3 #content_3 .col_1{width:450px;}
+#page_3 #content_3 .mid{width:57px;}
+#page_3 #content_3 .col_2{width:190px;}
+/*========//page_3===========*/
+
+/*=========page_4===========*/
+#page_4 #content_3 .col_1{width:188px;}
+#page_4 #content_3 .mid{width:59px;}
+#page_4 #content_3 .col_2{width:440px;}
+/*========//page_4===========*/
+
+/*=========page_5===========*/
+#page_5 #content_2 .col_1{width:450px;}
+#page_5 #content_2 .mid{width:59px;}
+#page_5 #content_2 .col_2{width:184px;}
+
+#page_5 #content_3 .col_1{width:181px; padding-right:5px;}
+#page_5 #content_3 .mid{width:61px;}
+#page_5 #content_3 .col_2{width:449px;}
+/*========//page_5===========*/
+
+/*=========page_6===========*/
+#page_6 #content_2 .col_1{width:175px; padding-right:19px;}
+#page_6 #content_2 .mid{width:52px;}
+#page_6 #content_2 .col_2{width:451px;}
+
+#page_6 #content_3 .col_1{width:449px;}
+#page_6 #content_3 .mid{width:59px;}
+#page_6 #content_3 .col_2{width:180px;}
+/*========//page_6===========*/
+
