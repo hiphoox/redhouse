@@ -1,0 +1,404 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D3623260D0F684500981E51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* AppDelegate.m */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
+		28D7ACF80DDB3853001CB0EB /* SFCFretboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* SFCFretboardViewController.m */; };
+		4903F1CE0E4328FD0050D564 /* SFCNoteShape.m in Sources */ = {isa = PBXBuildFile; fileRef = 4903F1CD0E4328FD0050D564 /* SFCNoteShape.m */; };
+		491035BA0E3E8C6C00C36D6D /* MLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 491035B90E3E8C6C00C36D6D /* MLog.m */; };
+		4910368C0E3E95D300C36D6D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4910368B0E3E95D300C36D6D /* QuartzCore.framework */; };
+		49182DC40E3C7D0D00CD667D /* SFCInlayOrnamentShape.m in Sources */ = {isa = PBXBuildFile; fileRef = 49182DC30E3C7D0D00CD667D /* SFCInlayOrnamentShape.m */; };
+		49182E860E3C917B00CD667D /* SFCInstrumentStringShape.m in Sources */ = {isa = PBXBuildFile; fileRef = 49182E850E3C917B00CD667D /* SFCInstrumentStringShape.m */; };
+		49182F700E3CA5E200CD667D /* SFCFretShape.m in Sources */ = {isa = PBXBuildFile; fileRef = 49182F6F0E3CA5E200CD667D /* SFCFretShape.m */; };
+		49239E070E35988200F78873 /* SFCGeometry.m in Sources */ = {isa = PBXBuildFile; fileRef = 49239E060E35988200F78873 /* SFCGeometry.m */; };
+		49239F060E35C4B000F78873 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49239F050E35C4B000F78873 /* CoreGraphics.framework */; };
+		49239F7C0E35E2CB00F78873 /* SFCGuitarSpecs.m in Sources */ = {isa = PBXBuildFile; fileRef = 49239F7B0E35E2CB00F78873 /* SFCGuitarSpecs.m */; };
+		4923A0250E35F63A00F78873 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 4923A0240E35F63A00F78873 /* background.png */; };
+		4954E5E70E361C4200385887 /* SFCAttributedRect.m in Sources */ = {isa = PBXBuildFile; fileRef = 4954E5E60E361C4200385887 /* SFCAttributedRect.m */; };
+		49B225C40E425E4000108EBE /* SFCGuitarRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B225C30E425E4000108EBE /* SFCGuitarRenderer.m */; };
+		49B2282C0E429FE900108EBE /* SFCFretboardShape.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B2282B0E429FE900108EBE /* SFCFretboardShape.m */; };
+		49B2287D0E42A44E00108EBE /* SFCNutShape.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B2287C0E42A44E00108EBE /* SFCNutShape.m */; };
+		49B4A9850E42E109005F425A /* SFCPlayableShapeRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B4A9840E42E109005F425A /* SFCPlayableShapeRenderer.m */; };
+		49DA4A190E4999090039B1F3 /* Settings.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49DA4A180E4999090039B1F3 /* Settings.xib */; };
+		49DA4A1C0E4999250039B1F3 /* SFCSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49DA4A1B0E4999250039B1F3 /* SFCSettingsViewController.m */; };
+		49DA4A220E499A680039B1F3 /* SFCMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49DA4A210E499A680039B1F3 /* SFCMainViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D3623240D0F684500981E51 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; wrapsLines = 1; };
+		1D6058910D05DD3D006BFB54 /* FretboardViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FretboardViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		28D7ACF60DDB3853001CB0EB /* SFCFretboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFCFretboardViewController.h; sourceTree = "<group>"; };
+		28D7ACF70DDB3853001CB0EB /* SFCFretboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFCFretboardViewController.m; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* FretboardViewer_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FretboardViewer_Prefix.pch; sourceTree = "<group>"; };
+		4903F1CC0E4328FD0050D564 /* SFCNoteShape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFCNoteShape.h; sourceTree = "<group>"; };
+		4903F1CD0E4328FD0050D564 /* SFCNoteShape.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFCNoteShape.m; sourceTree = "<group>"; };
+		491035B80E3E8C6C00C36D6D /* MLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLog.h; sourceTree = "<group>"; };
+		491035B90E3E8C6C00C36D6D /* MLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLog.m; sourceTree = "<group>"; };
+		4910368B0E3E95D300C36D6D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		49182DC20E3C7D0D00CD667D /* SFCInlayOrnamentShape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFCInlayOrnamentShape.h; sourceTree = "<group>"; };
+		49182DC30E3C7D0D00CD667D /* SFCInlayOrnamentShape.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFCInlayOrnamentShape.m; sourceTree = "<group>"; };
+		49182DDC0E3C804900CD667D /* DrawableShape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DrawableShape.h; path = Classes/DrawableShape.h; sourceTree = "<group>"; };
+		49182E840E3C917B00CD667D /* SFCInstrumentStringShape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFCInstrumentStringShape.h; sourceTree = "<group>"; };
+		49182E850E3C917B00CD667D /* SFCInstrumentStringShape.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFCInstrumentStringShape.m; sourceTree = "<group>"; };
+		49182F6E0E3CA5E200CD667D /* SFCFretShape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFCFretShape.h; sourceTree = "<group>"; };
+		49182F6F0E3CA5E200CD667D /* SFCFretShape.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFCFretShape.m; sourceTree = "<group>"; };
+		49239E050E35988200F78873 /* SFCGeometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SFCGeometry.h; path = ../SFCGeometry.h; sourceTree = "<group>"; };
+		49239E060E35988200F78873 /* SFCGeometry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SFCGeometry.m; path = ../SFCGeometry.m; sourceTree = "<group>"; };
+		49239F050E35C4B000F78873 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		49239F7A0E35E2CB00F78873 /* SFCGuitarSpecs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFCGuitarSpecs.h; sourceTree = "<group>"; };
+		49239F7B0E35E2CB00F78873 /* SFCGuitarSpecs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFCGuitarSpecs.m; sourceTree = "<group>"; };
+		4923A0240E35F63A00F78873 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		4954E5E50E361C4200385887 /* SFCAttributedRect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFCAttributedRect.h; sourceTree = "<group>"; };
+		4954E5E60E361C4200385887 /* SFCAttributedRect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFCAttributedRect.m; sourceTree = "<group>"; };
+		49B225C20E425E4000108EBE /* SFCGuitarRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SFCGuitarRenderer.h; path = ../SFCGuitarRenderer.h; sourceTree = "<group>"; };
+		49B225C30E425E4000108EBE /* SFCGuitarRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SFCGuitarRenderer.m; path = ../SFCGuitarRenderer.m; sourceTree = "<group>"; };
+		49B226040E42654500108EBE /* SFCInstrumentShapes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFCInstrumentShapes.h; sourceTree = "<group>"; };
+		49B2282A0E429FE900108EBE /* SFCFretboardShape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFCFretboardShape.h; sourceTree = "<group>"; };
+		49B2282B0E429FE900108EBE /* SFCFretboardShape.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFCFretboardShape.m; sourceTree = "<group>"; };
+		49B2287B0E42A44E00108EBE /* SFCNutShape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFCNutShape.h; sourceTree = "<group>"; };
+		49B2287C0E42A44E00108EBE /* SFCNutShape.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFCNutShape.m; sourceTree = "<group>"; };
+		49B4A9830E42E109005F425A /* SFCPlayableShapeRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFCPlayableShapeRenderer.h; sourceTree = "<group>"; };
+		49B4A9840E42E109005F425A /* SFCPlayableShapeRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFCPlayableShapeRenderer.m; sourceTree = "<group>"; };
+		49B4A98C0E42E20C005F425A /* Rendering.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Rendering.h; sourceTree = "<group>"; };
+		49DA4A180E4999090039B1F3 /* Settings.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Settings.xib; sourceTree = "<group>"; };
+		49DA4A1A0E4999250039B1F3 /* SFCSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFCSettingsViewController.h; sourceTree = "<group>"; };
+		49DA4A1B0E4999250039B1F3 /* SFCSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFCSettingsViewController.m; sourceTree = "<group>"; };
+		49DA4A200E499A680039B1F3 /* SFCMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFCMainViewController.h; sourceTree = "<group>"; };
+		49DA4A210E499A680039B1F3 /* SFCMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFCMainViewController.m; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				49239F060E35C4B000F78873 /* CoreGraphics.framework in Frameworks */,
+				4910368C0E3E95D300C36D6D /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				49B226320E42671200108EBE /* Rendering */,
+				49B226310E4266F200108EBE /* Views & Controllers */,
+				49B2260F0E4266A700108EBE /* Drawing */,
+				49B2260E0E42668E00108EBE /* InstrumentShapes */,
+				4903F1CB0E4328D30050D564 /* PlayableShapes */,
+				491035B70E3E8C3000C36D6D /* Logging */,
+				1D3623240D0F684500981E51 /* AppDelegate.h */,
+				1D3623250D0F684500981E51 /* AppDelegate.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* FretboardViewer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				49182DE30E3C805300CD667D /* Protocols */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* FretboardViewer_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4923A0240E35F63A00F78873 /* background.png */,
+				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
+				8D1107310486CEB800E47090 /* Info.plist */,
+				49DA4A180E4999090039B1F3 /* Settings.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4910368B0E3E95D300C36D6D /* QuartzCore.framework */,
+				49239F050E35C4B000F78873 /* CoreGraphics.framework */,
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4903F1CB0E4328D30050D564 /* PlayableShapes */ = {
+			isa = PBXGroup;
+			children = (
+				4903F1CC0E4328FD0050D564 /* SFCNoteShape.h */,
+				4903F1CD0E4328FD0050D564 /* SFCNoteShape.m */,
+			);
+			name = PlayableShapes;
+			sourceTree = "<group>";
+		};
+		491035B70E3E8C3000C36D6D /* Logging */ = {
+			isa = PBXGroup;
+			children = (
+				491035B80E3E8C6C00C36D6D /* MLog.h */,
+				491035B90E3E8C6C00C36D6D /* MLog.m */,
+			);
+			name = Logging;
+			sourceTree = "<group>";
+		};
+		49182DE30E3C805300CD667D /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				49182DDC0E3C804900CD667D /* DrawableShape.h */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+		49B2260E0E42668E00108EBE /* InstrumentShapes */ = {
+			isa = PBXGroup;
+			children = (
+				49B226040E42654500108EBE /* SFCInstrumentShapes.h */,
+				49239F7A0E35E2CB00F78873 /* SFCGuitarSpecs.h */,
+				49239F7B0E35E2CB00F78873 /* SFCGuitarSpecs.m */,
+				49B2282A0E429FE900108EBE /* SFCFretboardShape.h */,
+				49B2282B0E429FE900108EBE /* SFCFretboardShape.m */,
+				49182DC20E3C7D0D00CD667D /* SFCInlayOrnamentShape.h */,
+				49182DC30E3C7D0D00CD667D /* SFCInlayOrnamentShape.m */,
+				49182E840E3C917B00CD667D /* SFCInstrumentStringShape.h */,
+				49182E850E3C917B00CD667D /* SFCInstrumentStringShape.m */,
+				49182F6E0E3CA5E200CD667D /* SFCFretShape.h */,
+				49182F6F0E3CA5E200CD667D /* SFCFretShape.m */,
+				49B2287B0E42A44E00108EBE /* SFCNutShape.h */,
+				49B2287C0E42A44E00108EBE /* SFCNutShape.m */,
+			);
+			name = InstrumentShapes;
+			sourceTree = "<group>";
+		};
+		49B2260F0E4266A700108EBE /* Drawing */ = {
+			isa = PBXGroup;
+			children = (
+				49239E050E35988200F78873 /* SFCGeometry.h */,
+				49239E060E35988200F78873 /* SFCGeometry.m */,
+				4954E5E50E361C4200385887 /* SFCAttributedRect.h */,
+				4954E5E60E361C4200385887 /* SFCAttributedRect.m */,
+			);
+			name = Drawing;
+			sourceTree = "<group>";
+		};
+		49B226310E4266F200108EBE /* Views & Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				49DA4A200E499A680039B1F3 /* SFCMainViewController.h */,
+				49DA4A210E499A680039B1F3 /* SFCMainViewController.m */,
+				28D7ACF60DDB3853001CB0EB /* SFCFretboardViewController.h */,
+				28D7ACF70DDB3853001CB0EB /* SFCFretboardViewController.m */,
+				49DA4A1A0E4999250039B1F3 /* SFCSettingsViewController.h */,
+				49DA4A1B0E4999250039B1F3 /* SFCSettingsViewController.m */,
+			);
+			name = "Views & Controllers";
+			sourceTree = "<group>";
+		};
+		49B226320E42671200108EBE /* Rendering */ = {
+			isa = PBXGroup;
+			children = (
+				49B4A98C0E42E20C005F425A /* Rendering.h */,
+				49B225C20E425E4000108EBE /* SFCGuitarRenderer.h */,
+				49B225C30E425E4000108EBE /* SFCGuitarRenderer.m */,
+				49B4A9830E42E109005F425A /* SFCPlayableShapeRenderer.h */,
+				49B4A9840E42E109005F425A /* SFCPlayableShapeRenderer.m */,
+			);
+			name = Rendering;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* FretboardViewer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "FretboardViewer" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FretboardViewer;
+			productName = FretboardViewer;
+			productReference = 1D6058910D05DD3D006BFB54 /* FretboardViewer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "FretboardViewer" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* FretboardViewer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
+				4923A0250E35F63A00F78873 /* background.png in Resources */,
+				49DA4A190E4999090039B1F3 /* Settings.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
+				28D7ACF80DDB3853001CB0EB /* SFCFretboardViewController.m in Sources */,
+				49239E070E35988200F78873 /* SFCGeometry.m in Sources */,
+				49239F7C0E35E2CB00F78873 /* SFCGuitarSpecs.m in Sources */,
+				4954E5E70E361C4200385887 /* SFCAttributedRect.m in Sources */,
+				49182DC40E3C7D0D00CD667D /* SFCInlayOrnamentShape.m in Sources */,
+				49182E860E3C917B00CD667D /* SFCInstrumentStringShape.m in Sources */,
+				49182F700E3CA5E200CD667D /* SFCFretShape.m in Sources */,
+				491035BA0E3E8C6C00C36D6D /* MLog.m in Sources */,
+				49B225C40E425E4000108EBE /* SFCGuitarRenderer.m in Sources */,
+				49B2282C0E429FE900108EBE /* SFCFretboardShape.m in Sources */,
+				49B2287D0E42A44E00108EBE /* SFCNutShape.m in Sources */,
+				49B4A9850E42E109005F425A /* SFCPlayableShapeRenderer.m in Sources */,
+				4903F1CE0E4328FD0050D564 /* SFCNoteShape.m in Sources */,
+				49DA4A1C0E4999250039B1F3 /* SFCSettingsViewController.m in Sources */,
+				49DA4A220E499A680039B1F3 /* SFCMainViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = FretboardViewer_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				PRODUCT_NAME = FretboardViewer;
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = FretboardViewer_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				PRODUCT_NAME = FretboardViewer;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos2.0;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos2.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "FretboardViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "FretboardViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
