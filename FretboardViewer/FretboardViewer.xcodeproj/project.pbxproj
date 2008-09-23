@@ -24,6 +24,9 @@
 		49239F7C0E35E2CB00F78873 /* SFCGuitarSpecs.m in Sources */ = {isa = PBXBuildFile; fileRef = 49239F7B0E35E2CB00F78873 /* SFCGuitarSpecs.m */; };
 		4923A0250E35F63A00F78873 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 4923A0240E35F63A00F78873 /* background.png */; };
 		4954E5E70E361C4200385887 /* SFCAttributedRect.m in Sources */ = {isa = PBXBuildFile; fileRef = 4954E5E60E361C4200385887 /* SFCAttributedRect.m */; };
+		4999E4EF0E89A5690092252F /* SFCInstrumentState.m in Sources */ = {isa = PBXBuildFile; fileRef = 4999E4EE0E89A5690092252F /* SFCInstrumentState.m */; };
+		4999E4F30E89A6720092252F /* SFCSingleFretting.m in Sources */ = {isa = PBXBuildFile; fileRef = 4999E4F20E89A6720092252F /* SFCSingleFretting.m */; };
+		4999E4F90E89A81A0092252F /* SFCBarFretting.m in Sources */ = {isa = PBXBuildFile; fileRef = 4999E4F80E89A81A0092252F /* SFCBarFretting.m */; };
 		49B225C40E425E4000108EBE /* SFCGuitarRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B225C30E425E4000108EBE /* SFCGuitarRenderer.m */; };
 		49B2282C0E429FE900108EBE /* SFCFretboardShape.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B2282B0E429FE900108EBE /* SFCFretboardShape.m */; };
 		49B2287D0E42A44E00108EBE /* SFCNutShape.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B2287C0E42A44E00108EBE /* SFCNutShape.m */; };
@@ -64,6 +67,13 @@
 		4923A0240E35F63A00F78873 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
 		4954E5E50E361C4200385887 /* SFCAttributedRect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFCAttributedRect.h; sourceTree = "<group>"; };
 		4954E5E60E361C4200385887 /* SFCAttributedRect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFCAttributedRect.m; sourceTree = "<group>"; };
+		4999E4ED0E89A5690092252F /* SFCInstrumentState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFCInstrumentState.h; sourceTree = "<group>"; };
+		4999E4EE0E89A5690092252F /* SFCInstrumentState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFCInstrumentState.m; sourceTree = "<group>"; };
+		4999E4F10E89A6720092252F /* SFCSingleFretting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFCSingleFretting.h; sourceTree = "<group>"; };
+		4999E4F20E89A6720092252F /* SFCSingleFretting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFCSingleFretting.m; sourceTree = "<group>"; };
+		4999E4F70E89A81A0092252F /* SFCBarFretting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFCBarFretting.h; sourceTree = "<group>"; };
+		4999E4F80E89A81A0092252F /* SFCBarFretting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFCBarFretting.m; sourceTree = "<group>"; };
+		4999E4FB0E89A93A0092252F /* SFCFrettingProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFCFrettingProtocol.h; sourceTree = "<group>"; };
 		49B225C20E425E4000108EBE /* SFCGuitarRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SFCGuitarRenderer.h; path = ../SFCGuitarRenderer.h; sourceTree = "<group>"; };
 		49B225C30E425E4000108EBE /* SFCGuitarRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SFCGuitarRenderer.m; path = ../SFCGuitarRenderer.m; sourceTree = "<group>"; };
 		49B226040E42654500108EBE /* SFCInstrumentShapes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFCInstrumentShapes.h; sourceTree = "<group>"; };
@@ -100,6 +110,7 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				4999E4F00E89A56F0092252F /* Models */,
 				49B226320E42671200108EBE /* Rendering */,
 				49B226310E4266F200108EBE /* Views & Controllers */,
 				49B2260F0E4266A700108EBE /* Drawing */,
@@ -188,6 +199,20 @@
 				49182DDC0E3C804900CD667D /* DrawableShape.h */,
 			);
 			name = Protocols;
+			sourceTree = "<group>";
+		};
+		4999E4F00E89A56F0092252F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4999E4ED0E89A5690092252F /* SFCInstrumentState.h */,
+				4999E4EE0E89A5690092252F /* SFCInstrumentState.m */,
+				4999E4F10E89A6720092252F /* SFCSingleFretting.h */,
+				4999E4F20E89A6720092252F /* SFCSingleFretting.m */,
+				4999E4F70E89A81A0092252F /* SFCBarFretting.h */,
+				4999E4F80E89A81A0092252F /* SFCBarFretting.m */,
+				4999E4FB0E89A93A0092252F /* SFCFrettingProtocol.h */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 		49B2260E0E42668E00108EBE /* InstrumentShapes */ = {
@@ -318,6 +343,9 @@
 				4903F1CE0E4328FD0050D564 /* SFCNoteShape.m in Sources */,
 				49DA4A1C0E4999250039B1F3 /* SFCSettingsViewController.m in Sources */,
 				49DA4A220E499A680039B1F3 /* SFCMainViewController.m in Sources */,
+				4999E4EF0E89A5690092252F /* SFCInstrumentState.m in Sources */,
+				4999E4F30E89A6720092252F /* SFCSingleFretting.m in Sources */,
+				4999E4F90E89A81A0092252F /* SFCBarFretting.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
