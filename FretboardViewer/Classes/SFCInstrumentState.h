@@ -18,7 +18,7 @@
 	NSMutableArray *frettings;
 }
 
-@property (retain) NSMutableArray *frettings;
+@property (nonatomic, retain) NSMutableArray *frettings;
 
 -(id)init;
 -(void)dealloc;
