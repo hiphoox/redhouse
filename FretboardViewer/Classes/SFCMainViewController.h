@@ -7,18 +7,22 @@
 //
 
 #import <UIKit/UIKit.h>
+
 @class SFCFretboardViewController;
 @class SFCSettingsViewController;
+@class SFCInstrumentState;
 
 @interface SFCMainViewController : UIViewController {
 
 	UINavigationController *navigationController;
 	SFCFretboardViewController *fretboardViewController;
 	SFCSettingsViewController *settingsViewController;
+	SFCInstrumentState* instrumentState;
 }
 
 @property (nonatomic, retain) SFCFretboardViewController *fretboardViewController;
 @property (nonatomic, retain) UINavigationController *navigationController;
 @property (nonatomic, retain)	SFCSettingsViewController *settingsViewController;
+@property (nonatomic, retain) SFCInstrumentState * instrumentState;
 
 @end

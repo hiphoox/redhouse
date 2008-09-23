@@ -9,12 +9,14 @@
 #import "SFCMainViewController.h"
 #import "SFCFretboardViewController.h"
 #import "SFCSettingsViewController.h"
+#import "SFCInstrumentState.h"
 
 @implementation SFCMainViewController
 
 @synthesize navigationController;
 @synthesize fretboardViewController;
 @synthesize settingsViewController;
+@synthesize instrumentState;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
 	if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
@@ -33,6 +35,9 @@
 	self.navigationController = [[[UINavigationController alloc] initWithRootViewController:self.fretboardViewController] autorelease];
 
 	self.view = self.navigationController.view;
+	
+	// Empty instrument state (no notes being played yet)
+	self.instrumentState = [[[SFCInstrumentState alloc] init] autorelease];
 }
 
 /*
@@ -66,6 +71,7 @@
 	self.navigationController = nil;
 	self.fretboardViewController = nil;
 	self.settingsViewController = nil;
+	self.instrumentState = nil;
 	[super dealloc];
 }
 
